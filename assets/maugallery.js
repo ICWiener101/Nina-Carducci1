@@ -1,4 +1,4 @@
-import $ from 'jquery';
+
 (function($) {
     $.fn.mauGallery = function(options) {
         var options = $.extend($.fn.mauGallery.defaults, options);
@@ -240,7 +240,7 @@ import $ from 'jquery';
                 return;
             }
             $('.active-tag').removeClass('active active-tag');
-            $(this).addClass('active-tag');
+            $(this).addClass('active active-tag');
 
             var tag = $(this).data('images-toggle');
 
