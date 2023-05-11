@@ -49,24 +49,6 @@
         tagsPosition: 'bottom',
         navigation: true
     };
-    // $.fn.mauGallery.listeners = function(options) {
-    //     $(document).on('click', '.gallery-item', function() {
-    //         if (options.lightBox && $(this).prop('tagName') === 'IMG') {
-    //             $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
-    //         } else {
-    //             return;
-    //         }
-    //     });
-
-    //     $(document).on('click', '.gallery .nav-link', $.fn.mauGallery.methods.filterByTag);
-
-    //     $(document).on('click', '.gallery .mg-prev', () =>
-    //         $.fn.mauGallery.methods.prevImage(options.lightboxId)
-    //     );
-    //     $(document).on('click', '.gallery .mg-next', () =>
-    //         $.fn.mauGallery.methods.nextImage(options.lightboxId)
-    //     );
-    // };
     $.fn.mauGallery.listeners = function(options) {
         $('.gallery-item').on('click', function() {
           if (options.lightBox && $(this).prop('tagName') === 'IMG') {
