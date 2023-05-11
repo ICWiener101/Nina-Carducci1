@@ -5,6 +5,7 @@ body {
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	font-display: swap;
 }
 .top-header {
 	background-color: white;
@@ -99,7 +100,7 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #897d10;
+	background-color: #80750f;
 	border-radius:0 ;
 
 }
@@ -218,7 +219,7 @@ body {
 form {
 	display: flex;
 	flex-direction: column;
-	width: 70%;
+	width: 100%;
 	align-items: flex-start;
 }
 
@@ -245,6 +246,13 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 1180px) {
+	.carousel-item{
+		max-height: 410px;
+	}
+	.carousel-item>img{
+		height: 100%;
+		object-fit: contain;
+	}
 	.picture {
 		flex : 2;
 	}
@@ -255,7 +263,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p {
 		width: 100%;
 	}
 }
@@ -266,7 +274,7 @@ input[type="submit"] {
 
 	}
 	.picture {
-		width: 50%;
+		width: 65%;
 	}
 	.picture.left::before {
 		width: 100%;

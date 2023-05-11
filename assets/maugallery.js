@@ -49,23 +49,41 @@
         tagsPosition: 'bottom',
         navigation: true
     };
+    // $.fn.mauGallery.listeners = function(options) {
+    //     $(document).on('click', '.gallery-item', function() {
+    //         if (options.lightBox && $(this).prop('tagName') === 'IMG') {
+    //             $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
+    //         } else {
+    //             return;
+    //         }
+    //     });
+
+    //     $(document).on('click', '.gallery .nav-link', $.fn.mauGallery.methods.filterByTag);
+
+    //     $(document).on('click', '.gallery .mg-prev', () =>
+    //         $.fn.mauGallery.methods.prevImage(options.lightboxId)
+    //     );
+    //     $(document).on('click', '.gallery .mg-next', () =>
+    //         $.fn.mauGallery.methods.nextImage(options.lightboxId)
+    //     );
+    // };
     $.fn.mauGallery.listeners = function(options) {
         $('.gallery-item').on('click', function() {
-            if (options.lightBox && $(this).prop('tagName') === 'IMG') {
-                $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
-            } else {
-                return;
-            }
+          if (options.lightBox && $(this).prop('tagName') === 'IMG') {
+            $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
+          } else {
+            return;
+          }
         });
 
         $('.gallery').on('click', '.nav-link', $.fn.mauGallery.methods.filterByTag);
         $('.gallery').on('click', '.mg-prev', () =>
-            $.fn.mauGallery.methods.prevImage(options.lightboxId)
+          $.fn.mauGallery.methods.prevImage(options.lightboxId)
         );
         $('.gallery').on('click', '.mg-next', () =>
-            $.fn.mauGallery.methods.nextImage(options.lightboxId)
+          $.fn.mauGallery.methods.nextImage(options.lightboxId)
         );
-    };
+      };
     $.fn.mauGallery.methods = {
         createRowWrapper(element) {
             if (!element
@@ -150,7 +168,7 @@
 
             $(imagesCollection).each(function(i) {
                 if ($(activeImage).attr('src') === $(this).attr('src')) {
-                    index = i;
+                    index = i -1 ;
                 }
             });
             next =
@@ -189,7 +207,7 @@
 
             $(imagesCollection).each(function(i) {
                 if ($(activeImage).attr('src') === $(this).attr('src')) {
-                    index = i;
+                    index = i +1;
                 }
             });
             next = imagesCollection[index] || imagesCollection[0];
