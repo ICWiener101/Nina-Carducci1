@@ -2,8 +2,12 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+@font-face {
+	font-family: 'Inter', sans-serif;
+	src: local('./assets/Font/Inter-VariableFont_slnt,wght.ttf');
+}
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
 	font-display: swap;
 }
