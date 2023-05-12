@@ -4,7 +4,7 @@ body {
 }
 @font-face {
 	font-family: 'Inter', sans-serif;
-	src: local('./assets/Font/Inter-VariableFont_slnt,wght.ttf');
+	src: url('http://www.icwiener101.github.io/ICWiener101/assets/Font/Inter-VariableFont_slnt,wght.ttf');
 }
 * {
 	font-family: 'Inter', sans-serif;
