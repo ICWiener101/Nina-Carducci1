@@ -5,15 +5,20 @@ body {
 @font-face {
 	font-family: 'Inter';
 	src: url('./Font/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+	font-display: swap;
 }
 @font-face{
 	font-family: 'Spectral';
 	src: url('./Font/Spectral/Spectral-Italic.ttf') format('truetype');
+	font-display: swap;
+
 }
 
 @font-face{
 	font-family: 'Spectral';
 	src: url('./Font/Spectral/Spectral-SemiBoldItalic.ttf') format('truetype');
+	font-display: swap;
+
 }
 
 * {
