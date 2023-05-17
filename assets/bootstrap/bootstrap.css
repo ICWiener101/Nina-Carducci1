@@ -1884,6 +1884,7 @@ button {
 [type="reset"],
 [type="submit"],
 button {
+    appearance: button;
     -webkit-appearance: button;
 }
 [type="button"]:not(:disabled),
@@ -1913,6 +1914,7 @@ textarea {
 }
 [type="search"] {
     outline-offset: -2px;
+    appearance: textfield;
     -webkit-appearance: textfield;
 }
 ::-webkit-search-decoration {
